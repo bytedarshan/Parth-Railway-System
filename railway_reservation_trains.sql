@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
 --
--- Host: localhost    Database: railway_reservation
+-- Host: 127.0.0.1    Database: railway_reservation
 -- ------------------------------------------------------
--- Server version	8.3.0
+-- Server version	8.0.40
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -31,7 +31,7 @@ CREATE TABLE `trains` (
   `schedule` time DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `train_number` (`train_number`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `trains` (
 
 LOCK TABLES `trains` WRITE;
 /*!40000 ALTER TABLE `trains` DISABLE KEYS */;
-INSERT INTO `trains` VALUES (1,121167,'Indore-Dehli Express','Indore Jn.','Dehli','11:55:00'),(2,197758,'Chennai Express','Indore Lakshmi Bai Nagar','Chennai Central','23:30:00'),(3,234256,'Indore-Banglore Express','Indore Jn','Banglore Cant','09:15:00');
+INSERT INTO `trains` VALUES (1,12345,'Express 101','Station A','Station B','10:00:00'),(2,12346,'Express 102','Station B','Station C','12:00:00'),(3,12347,'Superfast 201','Station C','Station D','14:00:00'),(4,12348,'Rajdhani 301','Station D','Station E','09:00:00'),(5,12349,'Shatabdi 401','Station E','Station F','11:00:00'),(6,12350,'Duronto 501','Station F','Station G','13:00:00'),(7,12351,'Jan Shatabdi 601','Station G','Station H','15:00:00');
 /*!40000 ALTER TABLE `trains` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-12-11 17:06:58
+-- Dump completed on 2025-01-25 18:52:34
